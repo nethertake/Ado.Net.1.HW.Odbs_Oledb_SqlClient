@@ -1,0 +1,22 @@
+﻿<Window x:Class="Con_ODBS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Con_ODBS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel Orientation="Vertical">
+            <Button Margin="5,5,0,0" Grid.Row="0" Width="300" x:Name="ConnectToServerButton" Click="ConnectToServerButton_Click">Connect To Server By ConnectionString</Button>
+            <Button Margin="5,5,0,0" Grid.Row="0"  x:Name="ConnectToServerButton2" Click="ConnectToServerButton2_Click">Connect To Server By Config</Button>
+            <Button Margin="5,5,0,0" Grid.Row="0"  x:Name="Clear" Click="Clear_Click">Clear</Button>
+        </WrapPanel>
+        <TextBlock Margin="5,5,5,5" Grid.Row="1" Width="Auto" Background="AliceBlue"  x:Name="ConnectMessage"></TextBlock>
+
+    </Grid>
+</Window>
